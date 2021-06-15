@@ -1,0 +1,121 @@
+/***********************************************
+*
+*		MISE EN PAGE
+*
+**********************************************/
+
+body {
+    background: url(../images/bkg_motif.gif) repeat #eee;
+    margin: 0px;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+div#page {
+    width: 580px;
+    margin: 60px auto;
+    position: relative;
+}
+
+
+/* Tabs */
+
+ul#tabs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: -40px;
+    z-index: 1;
+}
+
+ul#tabs li {
+    display: block;
+    position: relative;
+    padding: 0px 30px;
+    height: 39px;
+    line-height: 40px;
+    margin-right: 3px;
+    border: 1px solid #777;
+    width: auto;
+    float: left;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 20px 5px 0 0;
+    background-color: #ddd;
+    color: #fff;
+}
+
+ul#tabs li.active-tab {
+    height: 39px;
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+    border-left: 1px solid #999;
+    border-bottom: 1px solid #fff;
+    border-radius: 20px 5px 0 0;
+    background-color: #fff;
+    color: #000;
+}
+
+
+/* Bubbles */
+
+.bubble-class {
+    width: 160px;
+    height: 90px;
+    background: #fdfad3;
+    color: rgb(63, 29, 10);
+    border-radius: 0 5px 5px 5px;
+    border: 1px solid #ababab;
+    box-sizing: border-box;
+    padding: 15px;
+    line-height: 12px;
+    font-size: 10px;
+    position: absolute;
+    top: 32px;
+    left: 0;
+    transition: .25s;
+    opacity: 0;
+}
+
+
+/* Pages */
+
+div#page div {
+    padding: 20px 40px;
+    border: 1px solid #999;
+    width: 500px;
+    min-height: 500px;
+    box-shadow: 4px 4px 5px #999;
+    background-color: #fff;
+    display: none;
+}
+
+div#page div img {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+div.active-page {
+    display: block !important;
+}
+
+
+/* Pages Titles */
+
+div#page div h1:first-child {
+    text-align: center;
+}
+
+.green {
+    color: green;
+}
+
+.purple {
+    color: purple;
+}
+
+.orange {
+    color: orangered;
+}
